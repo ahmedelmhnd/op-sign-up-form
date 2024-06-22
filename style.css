@@ -109,3 +109,34 @@ legend
 
 }
 
+button
+{
+    margin: 30px;
+    background-color: aqua;
+    border: 0;
+    border-radius: 5px;
+    font-size: large;
+    font-family: 'Norse', sans-serif;
+    font-weight: 900;
+}
+
+.login
+{
+    margin-left: 30px;
+}
+
+a
+{
+    color: aqua;
+}
+
+input
+{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+input:invalid {
+    border-color: red;
+  }
