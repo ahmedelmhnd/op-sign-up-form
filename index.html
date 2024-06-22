@@ -21,56 +21,48 @@
     <div class="content">
         <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra ante eu nulla pellentesque, a feugiat lacus imperdiet. Nullam ex metus, tristique eget arcu nec, feugiat hendrerit erat. Morbi volutpat eros vitae ex commodo, in ornare massa aliquet. Integer porttitor varius risus in rutrum.</div>
         <form action="example.com/path" method="post">
-            <h1 class="form_heading"> Lets do this!</h1>
-            <fieldset>
-
-                <legend>Name</legend>
-
-                <div class="form_entry">
-                    <label for "first_name">First Name</label>
-                    <input type="text" id="fname" name="first_name">
-                </div>
-
-                <div class="form_entry">
-                    <label for "last_name">Last Name</label>
-                    <input type="text" id="lname" name="last_name">
-                </div>
-
-            </fieldset>
-
-            <fieldset>
+            <div class="form_entries">
+                <h1 class="form_heading"> Lets do this!</h1>
+                <fieldset>
+                    <legend>Name</legend>
+                    <div class="form_entry">
+                        <label for "first_name">First Name*</label>
+                        <input type="text" id="fname" name="first_name" required>
+                    </div>
+                    <div class="form_entry">
+                        <label for "last_name">Last Name*</label>
+                        <input type="text" id="lname" name="last_name" required>
+                    </div>
+                </fieldset>
+                <fieldset>
                 
-                <legend>Contacts</legend>
-
-                <div class="form_entry">
-                    <label for "email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-
-                <div class="form_entry">
-                    <label for "phone_number">Phone Number</label>
-                    <input type="number" id="pnumber" name="phone_number">
-                </div>
-
-            </fieldset>
-
-            <fieldset>
+                    <legend>Contacts</legend>
+                    <div class="form_entry">
+                        <label for "email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form_entry">
+                        <label for "phone_number">Phone Number</label>
+                        <input type="number" id="pnumber" name="phone_number" min="0400000000" max="0499999999" value="04">
+                    </div>
+                </fieldset>
+                <fieldset>
                 
-                <legend>Password</legend>
-
-                <div class="form_entry">
-                    <label for "password">Password</label>
-                    <input type="password" id="password" name="password">
-                </div>
-
-                <div class="form_entry">
-                    <label for "confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
-                </div>
-
-            </fieldset>
+                    <legend>Password</legend>
+                    <div class="form_entry">
+                        <label for "password">Password*</label>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="8" required>
+                    </div>
+                    <div class="form_entry">
+                        <label for "confirm_password">Confirm Password*</label>
+                        <input type="password" id="confirm_password" name="confirm_password" minlength="8" maxlength="8" required>
+                    </div>
+                </fieldset>
+            </div>
+            
+            <button class="submit" type="submit">Create Account</button>
         </form>
-        <button class="submit">Create Account</button>
+        
         <div class="login">Already have an account? <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank">login here</a></div>
     </div>
 </body>

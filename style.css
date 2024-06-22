@@ -69,7 +69,7 @@ h1
     font-weight: 900;
 }
 
-form
+.form_entries
 {
     background-color:rgb(255, 255, 255);
     color: black;
@@ -92,7 +92,7 @@ fieldset
 
     gap: 100px;
     border: 0;
-    justify-content: center;
+    justify-content: left;
 }
 
 .form_entry
@@ -106,7 +106,8 @@ fieldset
 legend
 {
     font-weight: 300;
-
+    border: 1px solid black;
+    padding: 3px;
 }
 
 button
@@ -137,6 +138,20 @@ input
     border: 2px solid;
 }
 
-input:invalid {
+input:invalid 
+{
     border-color: red;
-  }
+}
+
+input:focus
+{
+    outline: none;
+    border-color: aqua;
+    box-shadow: 3px 3px;
+}
+
+button:hover
+{
+    box-shadow: 3px 3px white;
+}
+
